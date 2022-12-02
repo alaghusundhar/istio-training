@@ -29,3 +29,8 @@ kind create cluster --name istio-training
 
 kubectl cluster-info --context kind-istio-training
 
+6 -- ## Install GetMesh
+
+curl -sL https://istio.tetratelabs.io/getmesh/install.sh | bash
+export GETMESH_HOME="$HOME/.getmesh"
+export PATH="$GETMESH_HOME/bin:$PATH"
